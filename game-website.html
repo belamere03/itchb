@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Smash Bros Infinity v0.7.0 - The Biggest Smash Fangame Ever Made!</title>
+    <link rel="stylesheet" href="game-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SSB Infinity v0.7.0</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#whats-new">What's New</a></li>
+                <li><a href="#fighters">Fighters</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#controls">Controls</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="particle-container"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">The Biggest</span>
+                        <span class="title-line">Smash Fangame</span>
+                        <span class="title-line">Ever Made!</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                       Super Smash Bros Infinity v0.7.0 – The ultimate chaotic, fast-paced, and feature-packed Smash fangame! Battle with 22 iconic fighters, master custom controls, take on smart bots, and unleash infinite combos in the most action-packed fan experience yet. Now playable on Turbowarp!
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('download')">
+                            🎮 Play Now on Turbowarp
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('fighters')">
+                            👊 Meet the 22 Fighters
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="character-showcase">
+                        <img src="https://img.itch.zone/aW1nLzIyMDM3NzM2LnBuZw==/original/GaBq0T.png" alt="Super Smash Bros Infinity v0.7.0 Characters" class="hero-image">
+                        <div class="version-overlay">v0.7.0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's New Section -->
+    <section id="whats-new" class="whats-new">
+        <div class="container">
+            <h2 class="section-title">🔥 What Makes v0.7.0 Special</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Custom Key Bindings</h3>
+                    <p>Rebind every control to your liking! Complete customization for keyboard and gamepad controls.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Bot Battles</h3>
+                    <p>Click the black part of any character box to face off against challenging CPU opponents with advanced AI.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚔️</div>
+                    <h3>Attack Combo System</h3>
+                    <p>Detailed move lists for every character with infinite combo possibilities and flashy combat effects.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Fan-Made Universe</h3>
+                    <p>A lovingly crafted crossover universe designed by the passionate Smash Infinity community.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Turbowarp Power</h3>
+                    <p>Now running on Turbowarp due to its massive scope - faster performance and no browser limits!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>No Install Required</h3>
+                    <p>Play directly in your browser with Turbowarp technology. Just click and fight!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fighters Section -->
+    <section id="fighters" class="roster">
+        <div class="container">
+            <h2 class="section-title">👊 Meet the 22 Fighters</h2>
+            <p class="roster-subtitle">Choose your fighter from this epic crossover roster spanning games, shows & fandoms</p>
+            <div class="roster-grid">
+                <div class="character-card" data-character="mario" onclick="showCharacterMoves('mario')">
+                    <div class="character-image">🍄</div>
+                    <h3>Mario</h3>
+                    <p>The all-rounder plumber</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="sonic" onclick="showCharacterMoves('sonic')">
+                    <div class="character-image">💨</div>
+                    <h3>Sonic</h3>
+                    <p>The speedster with rapid combos</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="sans" onclick="showCharacterMoves('sans')">
+                    <div class="character-image">💀</div>
+                    <h3>Sans</h3>
+                    <p>Low HP, high chaos</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="steve" onclick="showCharacterMoves('steve')">
+                    <div class="character-image">⛏️</div>
+                    <h3>Steve</h3>
+                    <p>Crafty moves from the blocky world</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="shaggy" onclick="showCharacterMoves('shaggy')">
+                    <div class="character-image">🌟</div>
+                    <h3>Shaggy</h3>
+                    <p>Ultra Instinct? You bet.</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="cuphead" onclick="showCharacterMoves('cuphead')">
+                    <div class="character-image">☕</div>
+                    <h3>Cuphead</h3>
+                    <p>Run and gun cartoon style</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="kirby" onclick="showCharacterMoves('kirby')">
+                    <div class="character-image">🌸</div>
+                    <h3>Kirby</h3>
+                    <p>The pink puffball of power</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="naruto" onclick="showCharacterMoves('naruto')">
+                    <div class="character-image">🍃</div>
+                    <h3>Naruto</h3>
+                    <p>Ninja techniques and jutsu</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="goku" onclick="showCharacterMoves('goku')">
+                    <div class="character-image">🐉</div>
+                    <h3>Goku</h3>
+                    <p>Saiyan warrior power</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="pikachu" onclick="showCharacterMoves('pikachu')">
+                    <div class="character-image">⚡</div>
+                    <h3>Pikachu</h3>
+                    <p>Electric mouse attacks</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="link" onclick="showCharacterMoves('link')">
+                    <div class="character-image">🗡️</div>
+                    <h3>Link</h3>
+                    <p>Hero of Hyrule</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="megaman" onclick="showCharacterMoves('megaman')">
+                    <div class="character-image">🤖</div>
+                    <h3>Megaman</h3>
+                    <p>Robot master abilities</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="scratch-cat" onclick="showCharacterMoves('scratch-cat')">
+                    <div class="character-image">🐱</div>
+                    <h3>Scratch Cat</h3>
+                    <p>Programming mascot fighter</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="impostor" onclick="showCharacterMoves('impostor')">
+                    <div class="character-image">👾</div>
+                    <h3>Impostor</h3>
+                    <p>Sus abilities activated</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="ness" onclick="showCharacterMoves('ness')">
+                    <div class="character-image">🔮</div>
+                    <h3>Ness</h3>
+                    <p>PSI powered attacks</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="hat-kid" onclick="showCharacterMoves('hat-kid')">
+                    <div class="character-image">🎩</div>
+                    <h3>Hat Kid</h3>
+                    <p>Time-bending adventures</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="sora" onclick="showCharacterMoves('sora')">
+                    <div class="character-image">🔑</div>
+                    <h3>Sora</h3>
+                    <p>Keyblade master</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="reimu" onclick="showCharacterMoves('reimu')">
+                    <div class="character-image">🌙</div>
+                    <h3>Reimu</h3>
+                    <p>Shrine maiden powers</p>
+                    <div class="bot-indicator">🤖 Bot Ready</div>
+                </div>
+                <div class="character-card" data-character="more" onclick="showAllFighters()">
+                    <div class="character-image">➕</div>
+                    <h3>And 4 More!</h3>
+                    <p>Secret fighters to unlock</p>
+                    <div class="unlock-hint">🔓 Discover them!</div>
+                </div>
+            </div>
+            <div class="moves-help">
+                <p>💡 <strong>Tip:</strong> Click any fighter to see their move list! Click the 🤖 Bot indicator to challenge a CPU opponent!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="gameplay">
+        <div class="container">
+            <h2 class="section-title">🎥 Epic Features & Gameplay</h2>
+            <div class="gameplay-content">
+                <div class="gameplay-video">
+                    <div class="video-placeholder">
+                        <img src="https://img.itch.zone/aW1nLzE5MjY3NTIxLnBuZw==/original/InUH3J.png" alt="Super Smash Bros Infinity v0.7.0 Gameplay" class="gameplay-screenshot">
+                        <div class="play-button">▶️</div>
+                        <div class="version-badge-overlay">v0.7.0</div>
+                    </div>
+                </div>
+                <div class="gameplay-features">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">👥</span>
+                            <span>Local multiplayer battles</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🤖</span>
+                            <span>Advanced AI bot opponents</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🎮</span>
+                            <span>Custom key bindings for all controls</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⚡</span>
+                            <span>Turbowarp enhanced performance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Controls & Settings Section -->
+    <section id="controls" class="tips">
+        <div class="container">
+            <h2 class="section-title">🎮 Controls & Settings</h2>
+            <div class="tips-grid">
+                <div class="tips-card">
+                    <h3>🔧 Custom Key Bindings</h3>
+                    <p class="controls-desc">Go to Settings in the main menu to fully customize your controls!</p>
+                    <div class="controls-list">
+                        <div class="control-item">
+                            <span class="key">WASD</span>
+                            <span>Movement (Customizable)</span>
+                        </div>
+                        <div class="control-item">
+                            <span class="key">J</span>
+                            <span>Attack (Customizable)</span>
+                        </div>
+                        <div class="control-item">
+                            <span class="key">K</span>
+                            <span>Special Move (Customizable)</span>
+                        </div>
+                        <div class="control-item">
+                            <span class="key">L</span>
+                            <span>Shield/Block (Customizable)</span>
+                        </div>
+                        <div class="control-item">
+                            <span class="key">Space</span>
+                            <span>Jump (Customizable)</span>
+                        </div>
+                    </div>
+                    <div class="gamepad-support">
+                        <p>🎮 <strong>Gamepad Support:</strong> Full controller customization available!</p>
+                    </div>
+                </div>
+                <div class="tips-card">
+                    <h3>⚡ Advanced Combat Tips</h3>
+                    <ul class="tech-list">
+                        <li>🏃 <strong>Dash Dancing:</strong> Rapidly tap directions for movement mixups</li>
+                        <li>🌊 <strong>Wave Dashing:</strong> Air dodge into ground for advanced movement</li>
+                        <li>🔄 <strong>Infinite Combos:</strong> Chain attacks creatively for maximum damage</li>
+                        <li>💥 <strong>Final Smash:</strong> Build meter by taking or dealing damage</li>
+                        <li>🤖 <strong>Bot Training:</strong> Use CPU battles to practice new techniques</li>
+                        <li>❓ <strong>Move Lists:</strong> Check each character's special moves and combos</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="settings-info">
+                <h3>⚙️ Game Settings</h3>
+                <p>Access the Settings menu to customize:</p>
+                <div class="settings-grid">
+                    <div class="setting-item">🔧 Key/Button Bindings</div>
+                    <div class="setting-item">🔊 Audio Levels</div>
+                    <div class="setting-item">📺 Screen Settings</div>
+                    <div class="setting-item">🤖 Bot Difficulty</div>
+                    <div class="setting-item">🧪 Experimental Features</div>
+                    <div class="setting-item">❓ Help & Move Lists</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title">🎮 Ready to Brawl?</h2>
+            <div class="download-content">
+                <div class="download-info">
+                    <h3>Experience the Ultimate Crossover!</h3>
+                    <p>This massive fangame brings the most chaotic, fast-paced, and feature-packed fighting experience ever built on the platform, featuring 22 playable fighters, custom controls, bot battles, and infinite combos.</p>
+                    <div class="download-stats">
+                        <div class="stat">
+                            <span class="stat-number">22</span>
+                            <span class="stat-label">Unique Fighters</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">v0.7.0</span>
+                            <span class="stat-label">Latest Version</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Free</span>
+                            <span class="stat-label">To Play</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">⚡</span>
+                            <span class="stat-label">Turbowarp</span>
+                        </div>
+                    </div>
+                    <div class="platform-info">
+                        <p><strong>🚀 Why Turbowarp?</strong><br>
+                        Our game grew too massive for regular Scratch! Turbowarp provides the performance and features needed for this epic crossover experience.</p>
+                    </div>
+                </div>
+                <div class="download-buttons">
+                    <a href="https://houndoomboi.itch.io/super-smash-bros-infinity-v061" target="_blank" class="btn btn-primary btn-large">
+                        🎮 Play on Turbowarp
+                    </a>
+                    <a href="https://houndoomboi.itch.io/super-smash-bros-infinity-v061" target="_blank" class="btn btn-secondary btn-large">
+                        📥 Download .sb3 File
+                    </a>
+                    <div class="download-options">
+                        <p>💻 Also available as .exe if available</p>
+                        <p>🌐 No ads, no monetization - just pure passion!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">❓ Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h3>Is this an official Smash game?</h3>
+                    <p>🅰️ No. This is a fan-made, non-profit project. All rights belong to their respective owners. We're just passionate fans creating this for the community!</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Can I play this offline?</h3>
+                    <p>🅰️ The game runs in-browser via Turbowarp. You can also download the .sb3 file or .exe version if available for offline play.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Who made this masterpiece?</h3>
+                    <p>🅰️ Created by HoundoomBoi and the passionate Scratch community! This is our love letter to the fighting game community.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Will there be more updates?</h3>
+                    <p>🅰️ Possibly! Follow our page and stay tuned for future developments. The community's feedback drives our updates!</p>
+                </div>
+                <div class="faq-card">
+                    <h3>How do I access move lists?</h3>
+                    <p>🅰️ Use the ❓ help icon in the main menu, or click on any character card on this website to see their moves and combos!</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Why did you move to Turbowarp?</h3>
+                    <p>🅰️ Our game became too big and complex for regular Scratch to handle! Turbowarp gives us the performance we need for 22 fighters and all their features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <h2 class="section-title">💬 Join the Infinity Community</h2>
+            <div class="community-content">
+                <div class="community-text">
+                    <h3>Connect with Fellow Fighters</h3>
+                    <p>Share your epic combos, discuss character strategies, report bugs, and stay updated with the latest news from the Super Smash Bros Infinity community. Help us make this the ultimate fan-made fighting game!</p>
+                    <div class="community-stats">
+                        <div class="stat-item">🎯 Share Combos</div>
+                        <div class="stat-item">🐛 Report Bugs</div>
+                        <div class="stat-item">💡 Suggest Features</div>
+                        <div class="stat-item">🎮 Find Opponents</div>
+                    </div>
+                </div>
+                <div class="community-links">
+                    <a href="#" class="community-link discord">
+                        <span class="link-icon">💬</span>
+                        <span>Discord Server</span>
+                        <span class="link-desc">Real-time chat & tournaments</span>
+                    </a>
+                    <a href="https://houndoomboi.itch.io/super-smash-bros-infinity-v061" target="_blank" class="community-link itch">
+                        <span class="link-icon">🎮</span>
+                        <span>itch.io Comments</span>
+                        <span class="link-desc">Feedback & updates</span>
+                    </a>
+                    <a href="#" class="community-link scratch">
+                        <span class="link-icon">🐾</span>
+                        <span>Scratch Profile</span>
+                        <span class="link-desc">Original creator page</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Super Smash Bros Infinity v0.7.0</h4>
+                    <p>"Super Smash Bros Infinity started as a Scratch project, but it quickly outgrew the platform. It's my love letter to the Smash community and all the franchises we grew up with. Thanks for playing!" - HoundoomBoi</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#fighters">22 Fighters</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#controls">Controls</a></li>
+                        <li><a href="#download">Play Now</a></li>
+                        <li><a href="#community">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section"> 
+                    <h4>Latest Version</h4>
+                    <p><strong>v0.7.0</strong> - Now on Turbowarp!</p>
+                    <p>Created by <strong>HoundoomBoi</strong></p>
+                    <div class="credits-note">
+                        <p><small>This is a fan-made game with no affiliation to Nintendo or other rights holders. All characters, logos, and sounds belong to their respective owners. No monetization involved.</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Super Smash Bros Infinity v0.7.0. Fan-made project created with ❤️ by the community. Nintendo, Super Smash Bros, and all related characters are trademarks of Nintendo. This project is non-profit and made purely for fun!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Character Moves Modal -->
+    <div id="movesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalCharacterName">Character Moves</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="characterMoves">
+                    <!-- Character moves will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game-script.js"></script>
+</body>
+</html>
