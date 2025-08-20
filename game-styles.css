@@ -494,8 +494,24 @@ section {
 .character-image {
     font-size: 3rem;
     margin-bottom: 1rem;
-    display: block;
-    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    transition: all 0.3s ease;
+}
+
+.character-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.character-card:hover .character-image img {
+    border-color: rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
 .character-card h3 {
