@@ -204,7 +204,7 @@ function createParticles() {
     }
 }
 
-// Character moves data
+// Character moves data - Complete movesets for all 22 fighters
 const characterMoves = {
     mario: {
         name: "Mario",
@@ -290,7 +290,6 @@ const characterMoves = {
         name: "Cuphead",
         description: "Run and gun cartoon style fighter",
         moves: [
-
             "☕ Finger Gun - Rapid fire",
             "🎯 Charge Shot - Powered projectile",
             "💨 Dash - Quick movement",
@@ -302,8 +301,199 @@ const characterMoves = {
             "Parry → Counter combo",
             "Air dash → Down-air"
         ]
+    },
+    kirby: {
+        name: "Kirby",
+        description: "The pink puffball of power",
+        moves: [
+            "💨 Inhale - Copy enemy abilities",
+            "🔨 Hammer - Powerful ground slam",
+            "⭐ Star Spit - Projectile attack",
+            "🌪️ Final Cutter - Sword wave",
+            "🍳 Cook - Final Smash cooking pot"
+        ],
+        combos: [
+            "Inhale → Star Spit",
+            "Hammer → Down-air",
+            "Final Cutter → Forward-smash"
+        ]
+    },
+    naruto: {
+        name: "Naruto",
+        description: "Ninja techniques and jutsu master",
+        moves: [
+            "🍃 Shadow Clone - Create duplicates",
+            "🌀 Rasengan - Spinning energy attack",
+            "🦊 Nine-Tails Chakra - Power boost",
+            "🏃 Ninja Run - Enhanced mobility",
+            "🌟 Sage Mode - Final Smash transformation"
+        ],
+        combos: [
+            "Shadow Clone → Rasengan",
+            "Ninja Run → Forward-air",
+            "Nine-Tails → Combo extension"
+        ]
+    },
+    goku: {
+        name: "Goku",
+        description: "Saiyan warrior with devastating power",
+        moves: [
+            "🌊 Kamehameha - Energy beam",
+            "👊 Dragon Fist - Rushing punch",
+            "⚡ Instant Transmission - Teleport",
+            "💪 Super Saiyan - Power transformation",
+            "🐲 Spirit Bomb - Final Smash ultimate"
+        ],
+        combos: [
+            "Dragon Fist → Kamehameha",
+            "Instant Transmission → Combo starter",
+            "Super Saiyan → Enhanced attacks"
+        ]
+    },
+    pikachu: {
+        name: "Pikachu",
+        description: "Electric mouse with shocking attacks",
+        moves: [
+            "⚡ Thunderbolt - Electric projectile",
+            "💥 Thunder - Lightning from above",
+            "🏃 Quick Attack - Swift movement",
+            "⭐ Thunder Wave - Paralysis attack",
+            "🌩️ Volt Tackle - Final Smash rush"
+        ],
+        combos: [
+            "Thunder Wave → Thunder",
+            "Quick Attack → Back-air",
+            "Thunderbolt → Forward-smash"
+        ]
+    },
+    link: {
+        name: "Link",
+        description: "Hero of Hyrule with legendary weapons",
+        moves: [
+            "🏹 Bow - Precise arrow shots",
+            "💣 Bomb - Explosive projectile",
+            "🗡️ Master Sword - Sacred blade",
+            "🛡️ Hylian Shield - Defensive stance",
+            "⚡ Triforce Slash - Final Smash combo"
+        ],
+        combos: [
+            "Bomb → Forward-air",
+            "Bow → Master Sword combo",
+            "Shield → Counter attack"
+        ]
+    },
+    megaman: {
+        name: "Megaman",
+        description: "Robot master with copied abilities",
+        moves: [
+            "🔫 Mega Buster - Charged shots",
+            "🔥 Fire Storm - Flame projectiles",
+            "⚡ Thunder Beam - Electric attack",
+            "🧊 Ice Slasher - Freezing projectile",
+            "💥 Rush Coil - Final Smash support"
+        ],
+        combos: [
+            "Mega Buster → Fire Storm",
+            "Ice Slasher → Thunder Beam",
+            "Rush Coil → Aerial combo"
+        ]
+    },
+    "scratch-cat": {
+        name: "Scratch Cat",
+        description: "Programming mascot with coding powers",
+        moves: [
+            "💻 Code Block - Programming attack",
+            "🎨 Sprite Change - Transform ability",
+            "🔄 Loop - Repeating actions",
+            "📢 Broadcast - Communication wave",
+            "🎮 Game Over - Final Smash debug"
+        ],
+        combos: [
+            "Code Block → Loop combo",
+            "Sprite Change → Broadcast",
+            "Loop → Infinite combo potential"
+        ]
+    },
+    impostor: {
+        name: "Impostor",
+        description: "Sus crewmate with deceptive abilities",
+        moves: [
+            "🔪 Sabotage - Disable enemy abilities",
+            "👤 Shapeshift - Mimic appearance",
+            "🚨 Emergency - Area damage",
+            "🕳️ Vent - Quick escape/attack",
+            "📱 Sus Vote - Final Smash ejection"
+        ],
+        combos: [
+            "Sabotage → Shapeshift",
+            "Vent → Emergency attack",
+            "Shapeshift → Backstab combo"
+        ]
+    },
+    ness: {
+        name: "Ness",
+        description: "PSI powered psychic fighter",
+        moves: [
+            "🔮 PK Thunder - Electric projectile",
+            "🔥 PK Fire - Flame pillar",
+            "💫 PSI Magnet - Absorb energy",
+            "🌟 PK Flash - Delayed explosion",
+            "🌍 PK Rockin - Final Smash wave"
+        ],
+        combos: [
+            "PK Fire → Forward-air",
+            "PK Thunder → Recovery combo",
+            "PSI Magnet → PK Flash"
+        ]
+    },
+    "hat-kid": {
+        name: "Hat Kid",
+        description: "Time-bending adventurer with magical hats",
+        moves: [
+            "🎩 Hat Throw - Boomerang attack",
+            "⏰ Time Stop - Freeze enemies",
+            "👻 Dweller Mask - Phase through",
+            "🏃 Sprint Hat - Enhanced speed",
+            "🌟 Time Rift - Final Smash chaos"
+        ],
+        combos: [
+            "Time Stop → Hat Throw",
+            "Sprint Hat → Aerial combo",
+            "Dweller Mask → Phase attack"
+        ]
+    },
+    sora: {
+        name: "Sora",
+        description: "Keyblade master from Kingdom Hearts",
+        moves: [
+            "🔑 Keyblade Combo - Multi-hit attack",
+            "✨ Magic Spells - Elemental attacks",
+            "🌟 Drive Form - Transformation",
+            "💫 Flowmotion - Enhanced mobility",
+            "👑 Ultimate Form - Final Smash power"
+        ],
+        combos: [
+            "Keyblade → Magic combo",
+            "Flowmotion → Aerial strikes",
+            "Drive Form → Enhanced attacks"
+        ]
+    },
+    reimu: {
+        name: "Reimu",
+        description: "Shrine maiden with spiritual powers",
+        moves: [
+            "🎴 Ofuda - Paper talisman projectiles",
+            "🌙 Yin-Yang Orb - Floating attack",
+            "⭐ Spirit Sign - Bullet pattern",
+            "🛡️ Fantasy Seal - Protective barrier",
+            "🌸 Fantasy Heaven - Final Smash spellcard"
+        ],
+        combos: [
+            "Ofuda → Yin-Yang combo",
+            "Spirit Sign → Fantasy Seal",
+            "Bullet pattern → Aerial follow-up"
+        ]
     }
-    // Add more characters as needed
 };
 
 // Show character moves modal
